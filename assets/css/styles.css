@@ -186,6 +186,23 @@ button{ font: inherit; cursor:pointer; border:0; background:none; color:inherit;
   z-index: 2;
 }
 
+/* Rider graphic */
+.intro__rider{
+  width: clamp(90px, 10vw, 140px);
+  margin: 0 auto 18px;
+  opacity: 0;
+  transform: translateX(-120%) scale(.85);
+}
+.intro__rider svg{ width:100%; height:auto; display:block; }
+.intro.is-playing .intro__rider{
+  animation: introRiderEnter 0.8s cubic-bezier(.34,1.56,.64,1) 0.1s forwards;
+}
+@keyframes introRiderEnter{
+  0%   { opacity: 0; transform: translateX(-120%) scale(.8); }
+  60%  { opacity: 1; transform: translateX(8px) scale(1.05); }
+  100% { opacity: 1; transform: translateX(0) scale(1); }
+}
+
 /* House SVG */
 .intro__house{
   width: clamp(80px, 12vw, 130px);
@@ -195,7 +212,7 @@ button{ font: inherit; cursor:pointer; border:0; background:none; color:inherit;
   transform-origin: center;
 }
 .intro.is-playing .intro__house{
-  animation: introHouseEnter 1.2s cubic-bezier(.34,1.56,.64,1) 0.2s forwards;
+  animation: introHouseEnter 1.2s cubic-bezier(.34,1.56,.64,1) 0.95s forwards;
 }
 @keyframes introHouseEnter{
   0%   { opacity: 0; transform: scale(0) rotate(-180deg) translateY(40px); }
@@ -226,14 +243,14 @@ button{ font: inherit; cursor:pointer; border:0; background:none; color:inherit;
 .intro.is-playing .intro__word > span{
   animation: introLetterIn 0.7s cubic-bezier(.34,1.56,.64,1) forwards;
 }
-.intro.is-playing .intro__word-h  { animation-delay: 0.9s;  }
-.intro.is-playing .intro__word-o  { animation-delay: 1.0s;  }
-.intro.is-playing .intro__word-m  { animation-delay: 1.1s;  }
-.intro.is-playing .intro__word-e  { animation-delay: 1.2s;  }
-.intro.is-playing .intro__word-f  { animation-delay: 1.4s;  }
-.intro.is-playing .intro__word-o2 { animation-delay: 1.5s;  }
-.intro.is-playing .intro__word-o3 { animation-delay: 1.6s;  }
-.intro.is-playing .intro__word-d  { animation-delay: 1.7s;  }
+.intro.is-playing .intro__word-h  { animation-delay: 1.3s;  }
+.intro.is-playing .intro__word-o  { animation-delay: 1.4s;  }
+.intro.is-playing .intro__word-m  { animation-delay: 1.5s;  }
+.intro.is-playing .intro__word-e  { animation-delay: 1.6s;  }
+.intro.is-playing .intro__word-f  { animation-delay: 1.8s;  }
+.intro.is-playing .intro__word-o2 { animation-delay: 1.9s;  }
+.intro.is-playing .intro__word-o3 { animation-delay: 2.0s;  }
+.intro.is-playing .intro__word-d  { animation-delay: 2.1s;  }
 
 @keyframes introLetterIn{
   0%   { opacity: 0; transform: translateY(60px) rotate(-12deg) scale(.7); }
