@@ -1659,7 +1659,7 @@ em{ font-style: italic; color: var(--primary); }
 }
 .footer__brand p{ color: rgba(255,255,255,.6); font-size: 14px; margin-top: 16px; max-width: 320px; }
 .footer__brand .nav__logo{ background: var(--primary); }
-.footer__socials{ display:flex; gap: 12px; margin-top: 22px; }
+.footer__socials{ display:flex; gap: 12px; margin-top: 22px; color: #fff;}
 .footer__socials a{
   width: 48px; height: 48px; border-radius: 50%;
   background: radial-gradient(circle at top left, rgba(217,164,65,.24), transparent 45%), rgba(255,255,255,.12);
