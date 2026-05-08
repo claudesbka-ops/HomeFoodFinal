@@ -1,6 +1,6 @@
 /* HomeFood — Cinematic Intro
  * Pure CSS/SVG animation, no React/Babel needed.
- * Total duration: ~3.6s
+ * Total duration: ~5.6s
  */
 (function () {
   'use strict';
@@ -14,8 +14,8 @@
     overlay.classList.add('is-playing');
   });
 
-  // Hide after animation ends (3.6s of animation + 0.4s fade = 4s total)
-  const TOTAL_DURATION = 3600;
+  // Hide after animation ends (5.6s of animation + 0.5s fade = 6.1s total)
+  const TOTAL_DURATION = 5600;
   const FADE_DURATION = 500;
 
   setTimeout(() => {
