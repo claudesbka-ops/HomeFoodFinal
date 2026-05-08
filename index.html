@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>HomeFood — Cook at Home, Earn Real Money | KL & Selangor</title>
+  <meta name="description" content="Join 15,000+ home cooks in KL and Selangor earning RM2,000–RM8,000 monthly. No restaurant needed. No experience required. Just your passion for cooking." />
+  <meta name="theme-color" content="#0f1410" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HomeFood — Cook at Home, Earn Real Money" />
+  <meta property="og:description" content="15,000+ home cooks already earning. KL & Selangor." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <link rel="stylesheet" href="assets/css/styles.css?v=10" />
+</head>
+<body class="loading">
+
+  <!-- ========== Cinematic Intro Animation ========== -->
+  <div class="intro" id="introOverlay" aria-hidden="true">
+    <!-- Decorative ambient blobs -->
+    <span class="intro__blob intro__blob--a"></span>
+    <span class="intro__blob intro__blob--b"></span>
+    <span class="intro__blob intro__blob--c"></span>
+
+    <!-- Floating food emojis that spiral in -->
+    <span class="intro__food intro__food--1">🍜</span>
+    <span class="intro__food intro__food--2">🥘</span>
+    <span class="intro__food intro__food--3">🍛</span>
+    <span class="intro__food intro__food--4">🥟</span>
+    <span class="intro__food intro__food--5">🌶️</span>
+    <span class="intro__food intro__food--6">🥥</span>
+    <span class="intro__food intro__food--7">🍢</span>
+    <span class="intro__food intro__food--8">🥢</span>
+
+    <!-- Steam particles -->
+    <span class="intro__steam intro__steam--1"></span>
+    <span class="intro__steam intro__steam--2"></span>
+    <span class="intro__steam intro__steam--3"></span>
+
+    <!-- Main center stage -->
+    <div class="intro__stage">
+      <!-- House icon draws in first -->
+      <svg class="intro__house" viewBox="0 0 60 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Roof -->
+        <path class="intro__house-roof" d="M30 6 L8 26 L52 26 Z" fill="#1F1F1F"/>
+        <!-- Chimney -->
+        <rect class="intro__house-chim" x="44" y="10" width="5" height="10" fill="#1F1F1F"/>
+        <!-- House body -->
+        <rect class="intro__house-body" x="14" y="26" width="32" height="14" fill="#1F1F1F"/>
+        <!-- Window -->
+        <rect class="intro__house-win" x="24" y="29" width="12" height="9" fill="#FBF6EE" stroke="#1F1F1F" stroke-width="1.2"/>
+        <line class="intro__house-win" x1="30" y1="29" x2="30" y2="38" stroke="#1F1F1F" stroke-width="1.2"/>
+        <line class="intro__house-win" x1="24" y1="33.5" x2="36" y2="33.5" stroke="#1F1F1F" stroke-width="1.2"/>
+        <!-- Plate (red bar) -->
+        <rect class="intro__house-plate" x="0" y="40" width="60" height="5" rx="2" fill="#E63946"/>
+        <!-- Plate underside drip -->
+        <path class="intro__house-drip" d="M16 45 Q30 60 44 45 Z" fill="#1F1F1F"/>
+      </svg>
+
+      <!-- Wordmark types in -->
+      <div class="intro__word">
+        <span class="intro__word-h">H</span>
+        <span class="intro__word-o">o</span>
+        <span class="intro__word-m">m</span>
+        <span class="intro__word-e">e</span>
+        <span class="intro__word-f">f</span>
+        <span class="intro__word-o2">o</span>
+        <span class="intro__word-o3">o</span>
+        <span class="intro__word-d">d</span>
+      </div>
+
+      <!-- Tagline reveals last -->
+      <p class="intro__tag">From kitchen, with love.</p>
+    </div>
+
+    <!-- Skip hint -->
+    <span class="intro__skip">Tap to skip</span>
+  </div>
+
+  <!-- ========== Nav ========== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">
+      <img src="assets/img/logo.svg" alt="HomeFood" class="nav__logoimg" />
+    </a>
+    <nav class="nav__links">
+      <a href="#why">Why HomeFood</a>
+      <a href="#process">How it works</a>
+      <a href="#dishes">Dishes</a>
+      <a href="#stories">Stories</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav__cta">
+      <a href="#download" class="btn btn--primary">
+        Become a cook
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ========== Mobile Drawer ========== -->
+  <div class="drawer" id="drawer">
+    <a href="#why">Why HomeFood</a>
+    <a href="#process">How it works</a>
+    <a href="#dishes">Dishes</a>
+    <a href="#stories">Stories</a>
+    <a href="#faq">FAQ</a>
+    <a href="#download" class="btn btn--primary btn--block">Become a cook <i data-lucide="arrow-up-right"></i></a>
+  </div>
+
+  <main id="top">
+
+    <!-- ========== Hero (slider) ========== -->
+    <section class="hero hero--slider" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--a"></div>
+        <div class="blob blob--b"></div>
+        <div class="blob blob--c"></div>
+        <div class="grain"></div>
+        <span class="hero__emoji hero__emoji--1">🍜</span>
+        <span class="hero__emoji hero__emoji--2">🥘</span>
+        <span class="hero__emoji hero__emoji--3">🍛</span>
+        <span class="hero__emoji hero__emoji--4">🥟</span>
+        <span class="hero__emoji hero__emoji--5">🍲</span>
+        <span class="hero__emoji hero__emoji--6">🥗</span>
+      </div>
+
+      <!-- Audience toggle (always visible, not part of sliding content) -->
+      <div class="container hero__toggle-wrap">
+        <div class="hero__toggle" role="tablist" aria-label="Choose your journey">
+          <button class="hero__toggle-btn is-active" data-slide="0" role="tab" aria-selected="true">
+            <i data-lucide="chef-hat"></i> I want to cook &amp; earn
+          </button>
+          <button class="hero__toggle-btn" data-slide="1" role="tab" aria-selected="false">
+            <i data-lucide="utensils"></i> I want to order food
+          </button>
+          <span class="hero__toggle-pill" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="hero__viewport">
+       <div class="hero__track">
+
+        <!-- ============ SLIDE 1 — For Cooks (existing) ============ -->
+        <div class="hero__slide is-active" data-audience="cook">
+          <div class="container hero__inner">
+            <div class="hero__copy">
+              <span class="eyebrow eyebrow--live"><span class="dot"></span> 312 cooks joined this week · KL spots filling fast</span>
+
+              <h1 class="hero__title">
+                Cook at <em>home</em>,<br/>
+                earn <span class="ink">real money.</span>
+                <svg class="ink__line" viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M2 12 C 60 2, 140 2, 298 10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </h1>
+
+              <p class="hero__lead">
+                Join thousands of home cooks in KL and Selangor earning <b>RM2,000 to RM8,000</b> monthly.
+                No restaurant. No experience. Just your passion for cooking.
+              </p>
+
+              <p class="hero__micro">
+                <i data-lucide="shield-check"></i> Free forever · <i data-lucide="clock"></i> 2 min sign-up · <i data-lucide="wallet"></i> Daily payouts
+              </p>
+
+              <div class="hero__ctas">
+                <a href="#download" class="store-btn">
+                  <i data-lucide="apple"></i>
+                  <span><small>Download on the</small><b>App Store</b></span>
+                </a>
+                <a href="#download" class="store-btn store-btn--dark">
+                  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#34A853" d="M3.6 20.5l10-10-3.4-3.4L3.6 20.5z"/><path fill="#FBBC04" d="M16.8 13.7l3.6-2c.9-.5.9-1.8 0-2.3l-3.5-2-3.7 3.7 3.6 2.6z"/><path fill="#4285F4" d="M3.6 3.5l10 10 3.2-3.2L4.5 3.1c-.3-.2-.7-.1-.9.1-.1.1-.1.2-.1.3z"/><path fill="#EA4335" d="M3.6 3.5v17l10-10-10-7z"/></svg>
+                  <span><small>Get it on</small><b>Google Play</b></span>
+                </a>
+              </div>
+
+              <div class="hero__stats">
+                <div><b data-count="2" data-suffix="M+">0</b><span>Orders delivered</span></div>
+                <div><b data-count="15" data-suffix="K+">0</b><span>Home cooks earning</span></div>
+                <div><b>4.8<i>★</i></b><span>Customer rating</span></div>
+              </div>
+            </div>
+
+            <div class="hero__art">
+              <div class="phone">
+                <div class="phone__notch"></div>
+                <div class="phone__screen">
+                  <div class="phone__top">
+                    <span>9:41</span>
+                    <span class="phone__sig">●●● 5G</span>
+                  </div>
+                  <div class="phone__hi">
+                    <small>Selamat pagi, Aisyah 👋</small>
+                    <h4>What's cooking today?</h4>
+                  </div>
+                  <div class="phone__search">
+                    <i data-lucide="search"></i> Search nasi lemak, rendang…
+                  </div>
+                  <div class="phone__chip-row">
+                    <span class="chip chip--on">All</span>
+                    <span class="chip">Nasi</span>
+                    <span class="chip">Kuih</span>
+                    <span class="chip">Mamak</span>
+                  </div>
+                  <div class="phone__card">
+                    <div class="phone__card-img"><img src="https://images.unsplash.com/photo-1626776876729-bab4369a5a5a?w=200&auto=format&fit=crop&q=70" alt="" loading="lazy"/></div>
+                    <div class="phone__card-body">
+                      <div>
+                        <b>Nasi Lemak Ayam</b>
+                        <small>Mak Cik Fatimah · 1.2km</small>
+                      </div>
+                      <span class="rating"><i data-lucide="star"></i>4.9</span>
+                    </div>
+                  </div>
+                  <div class="phone__card">
+                    <div class="phone__card-img"><img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=200&auto=format&fit=crop&q=70" alt="" loading="lazy"/></div>
+                    <div class="phone__card-body">
+                      <div>
+                        <b>Beef Rendang</b>
+                        <small>Kak Siti's Kitchen · 0.8km</small>
+                      </div>
+                      <span class="rating"><i data-lucide="star"></i>4.8</span>
+                    </div>
+                  </div>
+                  <div class="phone__earn">
+                    <small>Today's earnings</small>
+                    <b>RM 247.50</b>
+                    <span class="earn-trend">▲ 18% vs yesterday</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating tags -->
+              <div class="float-tag float-tag--a"><i data-lucide="badge-check"></i> Verified kitchens</div>
+              <div class="float-tag float-tag--b"><i data-lucide="wallet"></i> Instant payout</div>
+              <div class="float-tag float-tag--c"><i data-lucide="chef-hat"></i> 15K+ cooks</div>
+
+              <!-- Decorative food blobs -->
+              <span class="food food--1" aria-hidden="true">🍛</span>
+              <span class="food food--2" aria-hidden="true">🥥</span>
+              <span class="food food--3" aria-hidden="true">🌶️</span>
+              <span class="food food--4" aria-hidden="true">🥢</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ SLIDE 2 — For Buyers / End Customers ============ -->
+        <div class="hero__slide" data-audience="buyer">
+          <div class="container hero__inner">
+            <div class="hero__copy">
+              <span class="eyebrow eyebrow--live"><span class="dot"></span> 28-min average delivery · 500+ home kitchens nearby</span>
+
+              <h1 class="hero__title">
+                Real <em>home</em> food,<br/>
+                <span class="ink">delivered hot.</span>
+                <svg class="ink__line" viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M2 12 C 60 2, 140 2, 298 10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </h1>
+
+              <p class="hero__lead">
+                Order authentic Malaysian dishes from <b>500+ verified home cooks</b> near you. Nasi lemak, rendang, kuih — straight from the kitchen, not a restaurant chain.
+              </p>
+
+              <p class="hero__micro">
+                <i data-lucide="clock"></i> 28-min avg delivery · <i data-lucide="badge-check"></i> Verified kitchens · <i data-lucide="heart"></i> Made fresh, never frozen
+              </p>
+
+              <div class="hero__ctas">
+                <a href="#download" class="store-btn">
+                  <i data-lucide="apple"></i>
+                  <span><small>Order on the</small><b>App Store</b></span>
+                </a>
+                <a href="#download" class="store-btn store-btn--dark">
+                  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#34A853" d="M3.6 20.5l10-10-3.4-3.4L3.6 20.5z"/><path fill="#FBBC04" d="M16.8 13.7l3.6-2c.9-.5.9-1.8 0-2.3l-3.5-2-3.7 3.7 3.6 2.6z"/><path fill="#4285F4" d="M3.6 3.5l10 10 3.2-3.2L4.5 3.1c-.3-.2-.7-.1-.9.1-.1.1-.1.2-.1.3z"/><path fill="#EA4335" d="M3.6 3.5v17l10-10-10-7z"/></svg>
+                  <span><small>Get it on</small><b>Google Play</b></span>
+                </a>
+              </div>
+
+              <div class="hero__stats">
+                <div><b data-count="500" data-suffix="+">0</b><span>Home cooks near you</span></div>
+                <div><b data-count="28" data-suffix=" min">0</b><span>Average delivery</span></div>
+                <div><b>4.8<i>★</i></b><span>App Store rating</span></div>
+              </div>
+            </div>
+
+            <div class="hero__art">
+              <div class="phone">
+                <div class="phone__notch"></div>
+                <div class="phone__screen">
+                  <div class="phone__top">
+                    <span>9:41</span>
+                    <span class="phone__sig">●●● 5G</span>
+                  </div>
+                  <div class="phone__hi">
+                    <small>Order #4218 · arriving</small>
+                    <h4>Your food is on the way 🛵</h4>
+                  </div>
+
+                  <!-- Order tracking -->
+                  <div class="track">
+                    <div class="track__row track__row--done">
+                      <span class="track__dot"></span>
+                      <div><b>Order placed</b><small>9:24 AM</small></div>
+                    </div>
+                    <div class="track__row track__row--done">
+                      <span class="track__dot"></span>
+                      <div><b>Mak Cik Fatimah cooking</b><small>9:28 AM · fresh batch</small></div>
+                    </div>
+                    <div class="track__row track__row--active">
+                      <span class="track__dot"></span>
+                      <div><b>On the way with Aman</b><small>ETA 12 min · 2.4 km away</small></div>
+                    </div>
+                    <div class="track__row">
+                      <span class="track__dot"></span>
+                      <div><b>Delivered</b><small>—</small></div>
+                    </div>
+                  </div>
+
+                  <div class="phone__card phone__card--order">
+                    <div class="phone__card-img"><img src="https://images.unsplash.com/photo-1626776876729-bab4369a5a5a?w=200&auto=format&fit=crop&q=70" alt="" loading="lazy"/></div>
+                    <div class="phone__card-body">
+                      <div>
+                        <b>Nasi Lemak Ayam</b>
+                        <small>×1 · RM 12.90</small>
+                      </div>
+                      <span class="rating"><i data-lucide="star"></i>4.9</span>
+                    </div>
+                  </div>
+
+                  <div class="phone__earn phone__earn--green">
+                    <small>Total paid</small>
+                    <b>RM 16.40</b>
+                    <span class="earn-trend">incl. RM 3.50 delivery</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating tags (buyer variant) -->
+              <div class="float-tag float-tag--a"><i data-lucide="clock"></i> 28-min delivery</div>
+              <div class="float-tag float-tag--b"><i data-lucide="heart"></i> Made fresh</div>
+              <div class="float-tag float-tag--c"><i data-lucide="map-pin"></i> 1.2 km away</div>
+
+              <!-- Decorative food blobs -->
+              <span class="food food--1" aria-hidden="true">🍜</span>
+              <span class="food food--2" aria-hidden="true">🍢</span>
+              <span class="food food--3" aria-hidden="true">🥟</span>
+              <span class="food food--4" aria-hidden="true">🍡</span>
+            </div>
+          </div>
+        </div>
+
+       </div><!-- /.hero__track -->
+      </div><!-- /.hero__viewport -->
+
+      <!-- Slider dot indicators -->
+      <div class="hero__dots" role="tablist" aria-label="Slide indicators">
+        <button class="hero__dot is-active" data-slide="0" aria-label="Show cook slide" role="tab" aria-selected="true"></button>
+        <button class="hero__dot" data-slide="1" aria-label="Show order slide" role="tab" aria-selected="false"></button>
+      </div>
+
+    </section>
+
+    <!-- ========== 3D Showcase (scroll-driven) ========== -->
+    <section class="showcase" id="showcase">
+      <div class="container showcase__head">
+        <span class="eyebrow"><span class="dot"></span> The HomeFood experience</span>
+        <h2 class="section__title">From kitchen to <em>doorstep</em>.</h2>
+        <p class="section__sub">Watch how a single order moves through the HomeFood network — in real time.</p>
+      </div>
+      <div class="showcase__sticky">
+        <div class="stage">
+          <div class="stage__phone">
+            <div class="phone phone--3d">
+              <div class="phone__notch"></div>
+              <div class="phone__screen">
+                <div class="phone__hi"><small>Live order</small><h4>Mak Cik Fatimah</h4></div>
+                <div class="phone__card">
+                  <div class="phone__card-img"><img src="https://images.unsplash.com/photo-1626776876729-bab4369a5a5a?w=200&auto=format&fit=crop&q=70" alt="" loading="lazy"/></div>
+                  <div class="phone__card-body">
+                    <div><b>Nasi Lemak Ayam</b><small>Cooking · 8 min</small></div>
+                    <span class="rating"><i data-lucide="star"></i>4.9</span>
+                  </div>
+                </div>
+                <div class="phone__earn">
+                  <small>Today's earnings</small>
+                  <b>RM 247.50</b>
+                  <span class="earn-trend">▲ 18% vs yesterday</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orbiting cards -->
+          <div class="orbit orbit--1">
+            <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&auto=format&fit=crop&q=80" alt="" loading="lazy"/>
+            <b>Beef Rendang</b><small>RM 16.90</small>
+          </div>
+          <div class="orbit orbit--2">
+            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&auto=format&fit=crop&q=80" alt="" loading="lazy"/>
+            <b>Satay Ayam</b><small>RM 12.00</small>
+          </div>
+          <div class="orbit orbit--3">
+            <img src="https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=400&auto=format&fit=crop&q=80" alt="" loading="lazy"/>
+            <b>Mee Goreng</b><small>RM 7.50</small>
+          </div>
+          <div class="orbit orbit--4">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&auto=format&fit=crop&q=80" alt="" loading="lazy"/>
+            <b>Kuih Lapis</b><small>RM 6.50</small>
+          </div>
+
+          <span class="stage__chip stage__chip--a"><i data-lucide="chef-hat"></i> 15K+ home cooks</span>
+          <span class="stage__chip stage__chip--b"><i data-lucide="badge-check"></i> Verified kitchens</span>
+          <span class="stage__chip stage__chip--c"><i data-lucide="wallet"></i> Daily payouts</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Marquee ========== -->
+    <section class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <!-- duplicated for seamless loop -->
+        <div class="marquee__set">
+          <span>Verified kitchens</span><i>●</i>
+          <span>15,000+ home cooks</span><i>●</i>
+          <span>KL &amp; Selangor</span><i>●</i>
+          <span>Instant payouts</span><i>●</i>
+          <span>70% to cooks</span><i>●</i>
+          <span>No restaurant needed</span><i>●</i>
+          <span>Women-led kitchens</span><i>●</i>
+          <span>Authentic recipes</span><i>●</i>
+        </div>
+        <div class="marquee__set">
+          <span>Verified kitchens</span><i>●</i>
+          <span>15,000+ home cooks</span><i>●</i>
+          <span>KL &amp; Selangor</span><i>●</i>
+          <span>Instant payouts</span><i>●</i>
+          <span>70% to cooks</span><i>●</i>
+          <span>No restaurant needed</span><i>●</i>
+          <span>Women-led kitchens</span><i>●</i>
+          <span>Authentic recipes</span><i>●</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Loss Aversion / Psychological Hook ========== -->
+    <section class="loss" id="loss">
+      <div class="container loss__inner">
+        <div class="loss__copy">
+          <span class="eyebrow eyebrow--warn"><span class="dot"></span> Every day matters</span>
+          <h2 class="section__title">How much have you <em>not</em> earned this week?</h2>
+          <p class="section__sub">The average HomeFood cook earns <b>RM85 a day</b>. Every week you wait, that's <b>RM595</b> sitting on the table — cooked by someone else.</p>
+          <a href="#download" class="btn btn--primary btn--lg">Claim your spot today <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <div class="loss__stat">
+          <small>Earned by HomeFood cooks this week</small>
+          <b class="loss__big" data-live-money>RM 1,247,580</b>
+          <div class="loss__pulse"><span class="pulse-dot"></span> Live counter · updating now</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Why HomeFood ========== -->
+    <section class="section" id="why">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="dot"></span> Why HomeFood</span>
+          <h2 class="section__title">Earn real money <em>from your kitchen.</em></h2>
+          <p class="section__sub">HomeFood empowers home cooks to build sustainable income. No restaurant experience needed. No startup costs. Just your passion for cooking.</p>
+        </header>
+
+        <div class="features">
+          <article class="feature feature--lg">
+            <div class="feature__ico"><i data-lucide="banknote"></i></div>
+            <h3>Earn RM2,000–RM8,000 monthly</h3>
+            <p>Real income from your kitchen. No overhead. No staff. You keep <b>70%</b> of every order.</p>
+            <div class="feature__chart">
+              <span style="--h:35%"></span><span style="--h:55%"></span><span style="--h:48%"></span>
+              <span style="--h:72%"></span><span style="--h:65%"></span><span style="--h:88%"></span>
+              <span style="--h:95%"></span>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature__ico"><i data-lucide="clock"></i></div>
+            <h3>Work your own hours</h3>
+            <p>Cook when you want. Take breaks when you need. Built for parents, students, and side hustlers.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature__ico"><i data-lucide="bell-ring"></i></div>
+            <h3>Smart order alerts</h3>
+            <p>Instant notifications. Accept or decline based on your capacity. Never miss an opportunity.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature__ico"><i data-lucide="map-pin"></i></div>
+            <h3>Real-time order tracking</h3>
+            <p>Monitor every order from purchase to delivery. Track your rider live on the map.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature__ico"><i data-lucide="shield-check"></i></div>
+            <h3>Food safety support</h3>
+            <p>Guidance on hygiene, storage and packaging. Optional certifications boost your earnings.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature__ico"><i data-lucide="star"></i></div>
+            <h3>Build your reputation</h3>
+            <p>Verified customer reviews. Higher ratings = more orders = more income. Transparency wins.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature__ico"><i data-lucide="smartphone"></i></div>
+            <h3>Easy-to-use app</h3>
+            <p>Simple dashboard for orders, earnings, and chats. Works on every phone. Zero tech skill needed.</p>
+          </article>
+
+          <article class="feature feature--accent">
+            <div class="feature__ico"><i data-lucide="zap"></i></div>
+            <h3>Instant daily payouts</h3>
+            <p>Withdraw to your bank account daily. No waiting. No hidden fees. Money when you need it.</p>
+            <a href="#download" class="feature__link">Start earning <i data-lucide="arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Process ========== -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <span class="eyebrow"><span class="dot"></span> Simple process</span>
+            <h2 class="section__title">Start earning <em>in 4 steps.</em></h2>
+          </div>
+          <p class="section__sub">No complicated setup. No hidden requirements. Just download, set up, and start earning.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <div class="step__ico"><i data-lucide="download"></i></div>
+            <h3>Download &amp; sign up</h3>
+            <p>Download HomeFood. Create your home cook account in 2 minutes. Completely free.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <div class="step__ico"><i data-lucide="user-round-pen"></i></div>
+            <h3>Complete your profile</h3>
+            <p>Add your specialties, dish photos, and pricing. Tell customers about your cooking style.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <div class="step__ico"><i data-lucide="bell"></i></div>
+            <h3>Receive orders</h3>
+            <p>Customers place orders. You get instant alerts. Accept what fits your schedule.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <div class="step__ico"><i data-lucide="trending-up"></i></div>
+            <h3>Earn &amp; grow</h3>
+            <p>Cook, deliver, earn 70% per order. Build your rating. Scale at your own pace.</p>
+          </li>
+        </ol>
+
+        <div class="process__cta">
+          <a href="#download" class="btn btn--primary btn--lg">Download now &amp; start earning <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Popular Dishes ========== -->
+    <section class="section" id="dishes">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <span class="eyebrow"><span class="dot"></span> Popular dishes</span>
+            <h2 class="section__title">Authentic <em>home-cooked</em> dishes.</h2>
+            <p class="section__sub">Every dish prepared with passion in real Malaysian kitchens.</p>
+          </div>
+          <a href="#download" class="btn btn--ghost">Browse all dishes <i data-lucide="arrow-right"></i></a>
+        </header>
+
+        <div class="dishes">
+          <article class="dish tilt">
+            <span class="dish__tag dish__tag--best">Bestseller</span>
+            <div class="dish__img"><img src="https://images.unsplash.com/photo-1626776876729-bab4369a5a5a?w=800&auto=format&fit=crop&q=80" alt="Nasi Lemak Ayam" loading="lazy"/></div>
+            <div class="dish__body">
+              <h3>Nasi Lemak Ayam</h3>
+              <small>By Mak Cik Fatimah</small>
+              <div class="dish__meta">
+                <span class="rating"><i data-lucide="star"></i> 4.9 <em>(2.1k)</em></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish tilt">
+            <span class="dish__tag dish__tag--top">Top rated</span>
+            <div class="dish__img"><img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&auto=format&fit=crop&q=80" alt="Beef Rendang" loading="lazy"/></div>
+            <div class="dish__body">
+              <h3>Beef Rendang</h3>
+              <small>By Kak Siti's Kitchen</small>
+              <div class="dish__meta">
+                <span class="rating"><i data-lucide="star"></i> 4.8 <em>(1.4k)</em></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish tilt">
+            <span class="dish__tag">Popular</span>
+            <div class="dish__img"><img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800&auto=format&fit=crop&q=80" alt="Satay" loading="lazy"/></div>
+            <div class="dish__body">
+              <h3>Satay Ayam (10 sticks)</h3>
+              <small>By Aunty Zainab</small>
+              <div class="dish__meta">
+                <span class="rating"><i data-lucide="star"></i> 4.9 <em>(3.2k)</em></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish tilt">
+            <span class="dish__tag dish__tag--late">Late night</span>
+            <div class="dish__img"><img src="https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=800&auto=format&fit=crop&q=80" alt="Mee Goreng Mamak" loading="lazy"/></div>
+            <div class="dish__body">
+              <h3>Mee Goreng Mamak</h3>
+              <small>By Kak Norma</small>
+              <div class="dish__meta">
+                <span class="rating"><i data-lucide="star"></i> 4.8 <em>(1.8k)</em></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Kuih / Heritage ========== -->
+    <section class="section section--dark" id="kuih">
+      <div class="container kuih">
+        <div class="kuih__copy">
+          <span class="eyebrow eyebrow--light"><span class="dot"></span> Traditional sweets</span>
+          <h2 class="section__title">Kuih &amp; manisan, <em>straight from the kampung.</em></h2>
+          <p class="section__sub section__sub--light">
+            Order ondeh ondeh, kuih lapis, seri muka, kuih talam and more — handmade by home cooks using
+            family recipes passed down for generations. Steamed fresh on the morning of delivery.
+          </p>
+          <ul class="ticks">
+            <li><i data-lucide="check-circle-2"></i> Real ingredients, no preservatives</li>
+            <li><i data-lucide="check-circle-2"></i> Made-to-order, never sitting on a shelf</li>
+            <li><i data-lucide="check-circle-2"></i> Direct from the cook's kitchen to your door</li>
+          </ul>
+          <a href="#download" class="btn btn--accent">Order traditional sweets <i data-lucide="arrow-up-right"></i></a>
+        </div>
+
+        <div class="kuih__grid">
+          <article class="kuih-card tilt">
+            <div class="kuih-card__img"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&auto=format&fit=crop&q=80" alt="Kuih Lapis Pandan" loading="lazy"/></div>
+            <h4>Kuih Lapis Pandan</h4>
+            <small>By Mak Cik Rohaya</small>
+            <span class="rating rating--light"><i data-lucide="star"></i> 4.9</span>
+          </article>
+          <article class="kuih-card tilt">
+            <div class="kuih-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80" alt="Ondeh Ondeh" loading="lazy"/></div>
+            <h4>Ondeh Ondeh</h4>
+            <small>By Kak Aminah</small>
+            <span class="rating rating--light"><i data-lucide="star"></i> 4.8</span>
+          </article>
+          <article class="kuih-card tilt">
+            <div class="kuih-card__img"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&auto=format&fit=crop&q=80" alt="Seri Muka" loading="lazy"/></div>
+            <h4>Seri Muka</h4>
+            <small>By Puan Hasnah</small>
+            <span class="rating rating--light"><i data-lucide="star"></i> 4.9</span>
+          </article>
+          <article class="kuih-card tilt">
+            <div class="kuih-card__img"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80" alt="Kuih Talam" loading="lazy"/></div>
+            <h4>Kuih Talam</h4>
+            <small>By Mak Lah's Kitchen</small>
+            <span class="rating rating--light"><i data-lucide="star"></i> 4.7</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Numbers ========== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="dot"></span> By the numbers</span>
+          <h2 class="section__title">HomeFood <em>by the numbers.</em></h2>
+        </header>
+        <div class="numbers">
+          <div class="num"><b data-count="2" data-suffix="M+">0</b><h4>Orders delivered</h4><small>Through home cooks</small></div>
+          <div class="num"><b data-count="15" data-suffix="K+">0</b><h4>Home cooks earning</h4><small>In KL &amp; Selangor</small></div>
+          <div class="num"><b data-count="28" data-suffix=" min">0</b><h4>Avg. delivery time</h4><small>From kitchen to door</small></div>
+          <div class="num"><b>4.8<i>★</i></b><h4>App store rating</h4><small>From verified users</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Stories ========== -->
+    <section class="section section--soft" id="stories">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="dot"></span> Success stories</span>
+          <h2 class="section__title">Real home cooks. <em>Real earnings.</em></h2>
+          <p class="section__sub">Hear from women and home cooks earning real money from their kitchens.</p>
+        </header>
+
+        <div class="stories">
+          <figure class="story">
+            <div class="story__head">
+              <div class="story__avatar"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&auto=format&fit=crop&q=80" alt="Mak Cik Fatimah" loading="lazy"/></div>
+              <div>
+                <b>Mak Cik Fatimah</b>
+                <small>Setapak, KL</small>
+              </div>
+              <span class="story__earn">RM 5,000<small>/mo</small></span>
+            </div>
+            <blockquote>
+              "I started 6 months ago after my husband passed away. Now I earn RM5,000 monthly from my kitchen.
+              My kids can go to school, and I have dignity."
+            </blockquote>
+          </figure>
+
+          <figure class="story story--accent">
+            <div class="story__head">
+              <div class="story__avatar"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&auto=format&fit=crop&q=80" alt="Kak Siti" loading="lazy"/></div>
+              <div>
+                <b>Kak Siti</b>
+                <small>Subang Jaya</small>
+              </div>
+              <span class="story__earn">RM 3,500<small>/mo</small></span>
+            </div>
+            <blockquote>
+              "Single mother of two. I cook around my kids' schedule and earn RM3,500 monthly.
+              No boss, no stress, just my cooking and my family."
+            </blockquote>
+          </figure>
+
+          <figure class="story">
+            <div class="story__head">
+              <div class="story__avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&auto=format&fit=crop&q=80" alt="Aunty Zainab" loading="lazy"/></div>
+              <div>
+                <b>Aunty Zainab</b>
+                <small>Klang, Selangor</small>
+              </div>
+              <span class="story__earn">RM 6,800<small>/mo</small></span>
+            </div>
+            <blockquote>
+              "30 years of cooking experience. HomeFood gave me a platform without restaurant overhead.
+              My satay is famous on the app now."
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Coverage ========== -->
+    <section class="section" id="coverage">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="dot"></span> Coverage</span>
+          <h2 class="section__title">Now hiring home cooks in <em>KL &amp; Selangor.</em></h2>
+          <p class="section__sub">Join thousands of home cooks already earning. More cities coming soon.</p>
+        </header>
+
+        <div class="coverage">
+          <div class="cov-col">
+            <span class="cov-tag cov-tag--live">● Now accepting</span>
+            <article class="city">
+              <h3>Kuala Lumpur</h3>
+              <small>8,000+ cooks earning</small>
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+            <article class="city">
+              <h3>Selangor</h3>
+              <small>7,000+ cooks earning</small>
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+          </div>
+          <div class="cov-col cov-col--soft">
+            <span class="cov-tag">Coming Q3 2026</span>
+            <article class="city city--soon">
+              <h3>Penang</h3>
+              <small>Accepting cooks soon</small>
+            </article>
+            <article class="city city--soon">
+              <h3>Johor Bahru</h3>
+              <small>Accepting cooks soon</small>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Bonuses ========== -->
+    <section class="section section--alt" id="bonuses">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow eyebrow--accent"><span class="dot"></span> 🎉 Earn more bonuses</span>
+          <h2 class="section__title">Home cook <em>incentives.</em></h2>
+          <p class="section__sub">Earn extra bonuses and rewards as you grow your home cook business.</p>
+        </header>
+
+        <div class="bonuses">
+          <article class="bonus">
+            <span class="bonus__big">RM100</span>
+            <h3>Welcome bonus</h3>
+            <p>New home cooks get RM100 credit after their first 5 orders.</p>
+            <i data-lucide="gift" class="bonus__ico"></i>
+          </article>
+          <article class="bonus bonus--alt">
+            <span class="bonus__big">5% extra</span>
+            <h3>Top performer bonus</h3>
+            <p>Earn 4.8+ rating? Get 5% extra commission on all orders.</p>
+            <i data-lucide="trophy" class="bonus__ico"></i>
+          </article>
+          <article class="bonus">
+            <span class="bonus__big">RM200</span>
+            <h3>Referral bonus</h3>
+            <p>Refer another cook. Both get RM200 when they complete 10 orders.</p>
+            <i data-lucide="users" class="bonus__ico"></i>
+          </article>
+        </div>
+
+        <div class="process__cta">
+          <a href="#download" class="btn btn--primary btn--lg">Download &amp; apply now <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Download CTA ========== -->
+    <section class="section" id="download">
+      <div class="container">
+        <div class="cta">
+          <div class="cta__copy">
+            <span class="eyebrow eyebrow--light"><span class="dot"></span> Download now</span>
+            <h2 class="section__title">Your first order <em>starts here.</em></h2>
+            <p class="section__sub section__sub--light">
+              Download HomeFood free. Browse 500+ verified home cooks. Get your food in under 30 minutes.
+              No subscription. No hidden fees.
+            </p>
+            <ul class="ticks ticks--row">
+              <li><i data-lucide="check"></i> 100% verified kitchens</li>
+              <li><i data-lucide="check"></i> 28-min avg delivery</li>
+              <li><i data-lucide="check"></i> 4.8★ rated app</li>
+            </ul>
+            <div class="hero__ctas">
+              <a href="#" class="store-btn store-btn--light">
+                <i data-lucide="apple"></i>
+                <span><small>Download on the</small><b>App Store</b></span>
+              </a>
+              <a href="#" class="store-btn store-btn--light">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#34A853" d="M3.6 20.5l10-10-3.4-3.4L3.6 20.5z"/><path fill="#FBBC04" d="M16.8 13.7l3.6-2c.9-.5.9-1.8 0-2.3l-3.5-2-3.7 3.7 3.6 2.6z"/><path fill="#4285F4" d="M3.6 3.5l10 10 3.2-3.2L4.5 3.1c-.3-.2-.7-.1-.9.1-.1.1-.1.2-.1.3z"/><path fill="#EA4335" d="M3.6 3.5v17l10-10-10-7z"/></svg>
+                <span><small>Get it on</small><b>Google Play</b></span>
+              </a>
+            </div>
+          </div>
+          <div class="cta__art">
+            <div class="phone phone--sm">
+              <div class="phone__notch"></div>
+              <div class="phone__screen">
+                <div class="phone__hi">
+                  <small>Order on the way 🛵</small>
+                  <h4>Mak Cik Fatimah</h4>
+                </div>
+                <div class="phone__map">
+                  <span class="pin pin--a"></span>
+                  <span class="pin pin--b"></span>
+                  <svg viewBox="0 0 200 120" preserveAspectRatio="none"><path d="M10 100 C 60 30, 130 90, 190 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="4 4"/></svg>
+                </div>
+                <div class="phone__earn">
+                  <small>Arriving in</small>
+                  <b>14 min</b>
+                  <span class="earn-trend">Nasi lemak ayam · RM 8.90</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section section--soft" id="faq">
+      <div class="container faq">
+        <header class="section__head section__head--row">
+          <div>
+            <span class="eyebrow"><span class="dot"></span> FAQ</span>
+            <h2 class="section__title">Questions about <em>earning.</em></h2>
+            <p class="section__sub">Can't find your answer? Email <a href="mailto:support@homefood.my">support@homefood.my</a></p>
+          </div>
+        </header>
+
+        <div class="faq__list">
+          <details>
+            <summary>How much can I earn as a home cook on HomeFood? <i data-lucide="plus"></i></summary>
+            <p>Most active cooks earn between RM2,000 and RM8,000 per month. Top performers cooking full-time can exceed RM10,000. You keep 70% of every order. Earnings depend on hours, ratings, and dish variety.</p>
+          </details>
+          <details>
+            <summary>Which cities can I cook in? <i data-lucide="plus"></i></summary>
+            <p>We're currently active in Kuala Lumpur and Selangor. Penang and Johor Bahru are launching in Q3 2026 — sign up now to be notified when your area opens.</p>
+          </details>
+          <details>
+            <summary>Do I need cooking experience or a food business license? <i data-lucide="plus"></i></summary>
+            <p>No experience or license is required to start. We provide free guidance on food safety, hygiene, and packaging. Optional certifications are available and can boost your visibility and earnings.</p>
+          </details>
+          <details>
+            <summary>What are the requirements to become a home cook? <i data-lucide="plus"></i></summary>
+            <p>You need a Malaysian IC, a clean home kitchen, a smartphone, and a bank account for payouts. That's it — sign up takes about 2 minutes.</p>
+          </details>
+          <details>
+            <summary>How do I get paid? <i data-lucide="plus"></i></summary>
+            <p>Earnings are deposited daily into your registered Malaysian bank account. No waiting periods. No hidden fees. You can also withdraw on demand from the app.</p>
+          </details>
+          <details>
+            <summary>Can I work part-time or full-time? <i data-lucide="plus"></i></summary>
+            <p>Both. You set your own hours and toggle availability anytime. Many of our cooks are parents and students who cook a few hours a day.</p>
+          </details>
+          <details>
+            <summary>What if I can't fulfill an order? <i data-lucide="plus"></i></summary>
+            <p>Simply decline incoming orders that don't fit your capacity. You can also pause new orders any time from the app — no penalty.</p>
+          </details>
+          <details>
+            <summary>How do I get more orders and higher earnings? <i data-lucide="plus"></i></summary>
+            <p>Maintain a 4.8+ rating, post clear dish photos, respond quickly to orders, and keep a varied menu. Top performers also unlock 5% extra commission.</p>
+          </details>
+        </div>
+
+        <div class="process__cta">
+          <a href="#download" class="btn btn--primary btn--lg">Download now <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="nav__brand nav__brand--footer">
+          <img src="assets/img/logo.svg" alt="HomeFood" class="nav__logoimg" />
+        </a>
+        <p>Malaysia's home-cook-first food delivery app. Authentic local meals from verified home kitchens, delivered hot.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/homefood" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i data-lucide="instagram"></i></a>
+          <a href="https://facebook.com/homefood" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i data-lucide="facebook"></i></a>
+          <a href="https://tiktok.com/@homefood" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i data-lucide="music-2"></i></a>
+          <a href="https://youtube.com/@homefood" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i data-lucide="youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h5>Product</h5>
+        <ul>
+          <li><a href="#why">Features</a></li>
+          <li><a href="#dishes">Restaurants</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#download">Partner with us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About HomeFood</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="kitchen-standards.html">Kitchen Standards</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__btm">
+      <small>© 2026 HomeFood Sdn Bhd. All rights reserved.</small>
+      <small>Kuala Lumpur · Selangor · Penang · Johor Bahru</small>
+    </div>
+  </footer>
+
+  <!-- ========== Live activity toast (psychology: social proof) ========== -->
+  <div class="toast" id="toast" aria-live="polite">
+    <div class="toast__avatar"></div>
+    <div class="toast__body">
+      <b id="toast-title">Aunty Sarah from Setapak</b>
+      <small id="toast-text">just earned RM45 · 2 min ago</small>
+    </div>
+    <span class="toast__live"><span class="pulse-dot"></span> Live</span>
+  </div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js" defer></script>
+
+  <!-- Intro animation (runs first) -->
+  <script src="assets/js/intro.js?v=1"></script>
+
+  <!-- Main interactions -->
+  <script src="assets/js/main.js?v=10" defer></script>
+</body>
+</html>

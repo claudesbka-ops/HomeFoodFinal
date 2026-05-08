@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Kitchen Standards — HomeFood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=9" />
+</head>
+<body class="loading">
+  <!-- ========== Navbar ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="nav__brand">
+        <img src="assets/img/logo.svg" alt="HomeFood" class="nav__logoimg" />
+        <span class="nav__logo">HomeFood</span>
+      </a>
+      <ul class="navbar__links">
+        <li><a href="index.html#why">Why HomeFood</a></li>
+        <li><a href="index.html#dishes">Dishes</a></li>
+        <li><a href="index.html#process">How It Works</a></li>
+        <li><a href="index.html#stories">Stories</a></li>
+        <li><a href="index.html#download">Download</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navbarToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Hero Section ========== -->
+  <section class="section section--legal">
+    <div class="container">
+      <div class="legal__header">
+        <h1>Kitchen Standards</h1>
+        <p>Requirements for Home Cooks on HomeFood</p>
+      </div>
+      
+      <div class="legal__content">
+        <h2>1. Food Safety Certification</h2>
+        <p>All home cooks must possess a valid food handler's certificate from the Ministry of Health Malaysia. This certification must be current and renewed as required by law.</p>
+        
+        <h2>2. Kitchen Hygiene</h2>
+        <p>Kitchens must meet the following hygiene standards:</p>
+        <ul>
+          <li>Clean and sanitized food preparation surfaces</li>
+          <li>Proper storage of ingredients (refrigeration for perishables)</li>
+          <li>Regular pest control measures</li>
+          <li>Clean water supply for cooking and cleaning</li>
+          <li>Proper waste disposal systems</li>
+        </ul>
+        
+        <h2>3. Ingredient Sourcing</h2>
+        <p>All ingredients must be sourced from reputable suppliers. Home cooks must maintain records of ingredient purchases and ensure all products are within their expiration dates.</p>
+        
+        <h2>4. Food Preparation</h2>
+        <p>Home cooks must follow safe food preparation practices:</p>
+        <ul>
+          <li>Proper hand washing before handling food</li>
+          <li>Cooking food to safe internal temperatures</li>
+          <li>Avoiding cross-contamination between raw and cooked foods</li>
+          <li>Using clean utensils and equipment</li>
+          <li>Wearing appropriate protective clothing (aprons, hair nets)</li>
+        </ul>
+        
+        <h2>5. Packaging and Delivery</h2>
+        <p>All food must be packaged in food-grade containers. Packaging must be clean, leak-proof, and properly labeled with contents, preparation date, and allergen information.</p>
+        
+        <h2>6. Allergen Management</h2>
+        <p>Home cooks must clearly declare all allergens in their dishes. Common allergens include nuts, dairy, eggs, gluten, soy, and shellfish.</p>
+        
+        <h2>7. Temperature Control</h2>
+        <p>Hot foods must be kept above 60°C during delivery. Cold foods must be kept below 5°C. Food should not be left at room temperature for more than 2 hours.</p>
+        
+        <h2>8. Regular Inspections</h2>
+        <p>HomeFood conducts periodic inspections of partner kitchens to ensure compliance with these standards. Non-compliance may result in suspension or termination of partnership.</p>
+        
+        <h2>9. Record Keeping</h2>
+        <p>Home cooks must maintain records of food preparation, including dates, temperatures, and any incidents for at least 6 months.</p>
+        
+        <h2>10. Training Requirements</h2>
+        <p>Home cooks must complete HomeFood's food safety training program and stay updated on food safety best practices through regular refresher courses.</p>
+      </div>
+      
+      <div class="legal__footer">
+        <a href="index.html" class="btn btn--primary">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container footer__btm">
+      <small>© 2026 HomeFood Sdn Bhd. All rights reserved.</small>
+      <small>Kuala Lumpur · Selangor · Penang · Johor Bahru</small>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script src="assets/js/main.js?v=8"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    document.body.classList.remove('loading');
+    lucide.createIcons();
+  </script>
+</body>
+</html>

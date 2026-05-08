@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 90" fill="none">
+  <!-- House + plate -->
+  <g transform="translate(70, 4)">
+    <!-- Roof -->
+    <path d="M30 6 L8 26 L52 26 Z" fill="#1F1F1F"/>
+    <!-- Chimney -->
+    <rect x="44" y="10" width="5" height="10" fill="#1F1F1F"/>
+    <!-- House body -->
+    <rect x="14" y="26" width="32" height="14" fill="#1F1F1F"/>
+    <!-- Window -->
+    <rect x="24" y="29" width="12" height="9" fill="#FBF6EE" stroke="#1F1F1F" stroke-width="1.2"/>
+    <line x1="30" y1="29" x2="30" y2="38" stroke="#1F1F1F" stroke-width="1.2"/>
+    <line x1="24" y1="33.5" x2="36" y2="33.5" stroke="#1F1F1F" stroke-width="1.2"/>
+    <!-- Plate (red bar) -->
+    <rect x="0" y="40" width="60" height="5" rx="2" fill="#E63946"/>
+    <!-- Plate underside drip -->
+    <path d="M16 45 Q30 60 44 45 Z" fill="#1F1F1F"/>
+  </g>
+  <!-- Wordmark "Homefood" -->
+  <text x="0" y="80" font-family="'Brush Script MT','Lucida Handwriting','Caveat',cursive" font-size="48" font-weight="700" font-style="italic">
+    <tspan fill="#1F1F1F">Home</tspan><tspan fill="#E63946">food</tspan>
+  </text>
+</svg>
