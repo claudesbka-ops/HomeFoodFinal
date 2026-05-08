@@ -10,28 +10,38 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=10" />
 </head>
 <body class="loading">
-  <!-- ========== Navbar ========== -->
-  <nav class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <a href="index.html" class="nav__brand">
-        <img src="assets/img/logo.svg" alt="HomeFood" class="nav__logoimg" />
-        <span class="nav__logo">HomeFood</span>
+  <!-- ========== Nav ========== -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/img/logo.svg" alt="HomeFood" class="nav__logoimg" />
+    </a>
+    <nav class="nav__links">
+      <a href="index.html#why">Why HomeFood</a>
+      <a href="index.html#process">How it works</a>
+      <a href="index.html#dishes">Dishes</a>
+      <a href="index.html#stories">Stories</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav__cta">
+      <a href="index.html#download" class="btn btn--primary">
+        Become a cook
+        <i data-lucide="arrow-up-right"></i>
       </a>
-      <ul class="navbar__links">
-        <li><a href="index.html#why">Why HomeFood</a></li>
-        <li><a href="index.html#dishes">Dishes</a></li>
-        <li><a href="index.html#process">How It Works</a></li>
-        <li><a href="index.html#stories">Stories</a></li>
-        <li><a href="index.html#download">Download</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
-      </ul>
-      <button class="navbar__toggle" id="navbarToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
-  </nav>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ========== Mobile Drawer ========== -->
+  <div class="drawer" id="drawer">
+    <a href="index.html#why">Why HomeFood</a>
+    <a href="index.html#process">How it works</a>
+    <a href="index.html#dishes">Dishes</a>
+    <a href="index.html#stories">Stories</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#download" class="btn btn--primary btn--block">Become a cook <i data-lucide="arrow-up-right"></i></a>
+  </div>
 
   <!-- ========== Hero Section ========== -->
   <section class="section section--legal">
