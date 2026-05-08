@@ -382,19 +382,57 @@ em{ font-style: italic; color: var(--primary); }
 
 .feedback__grid{
   display:grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: minmax(320px, 1.05fr) minmax(320px, 0.95fr);
   gap: 32px;
   align-items: start;
 }
-.feedback__copy{
-  padding: 2rem 2.5rem;
+.feedback__cards{
+  display:grid;
+  gap: 24px;
+}
+.feedback__copy,
+.feedback__card{
   background: #fff;
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
+  padding: 2rem 2.5rem;
 }
 .feedback__copy p{
   margin: 0 0 24px;
   color: var(--ink-soft);
+}
+.feedback__card--highlight{
+  border: 1px solid rgba(229,57,70,.14);
+  background: linear-gradient(180deg, rgba(249,238,226,.95) 0%, #fff 100%);
+}
+.feedback__card--highlight h3{
+  margin: 0 0 14px;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+.feedback__card--highlight p{
+  margin: 0 0 20px;
+  color: var(--ink-soft);
+}
+.feedback__stats{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.feedback__stats div{
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(229,57,70,.05);
+}
+.feedback__stats strong{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.feedback__stats span{
+  color: var(--muted);
+  font-size: 13px;
 }
 .feedback-form{
   background: #fff;
@@ -423,6 +461,25 @@ em{ font-style: italic; color: var(--primary); }
   color: var(--ink-2);
   font-family: var(--sans);
   font-size: 15px;
+  box-shadow: inset 0 1px 2px rgba(17,21,15,.06);
+}
+.feedback-form__row select{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--ink) 50%),
+    linear-gradient(135deg, var(--ink) 50%, transparent 50%),
+    linear-gradient(var(--line), var(--line));
+  background-position: calc(100% - 18px) calc(50% - 6px),
+                       calc(100% - 12px) calc(50% - 6px),
+                       0 100%;
+  background-size: 6px 6px, 6px 6px, 100% 1px;
+  background-repeat: no-repeat;
+  padding-right: 48px;
+}
+.feedback-form__row select::-ms-expand{
+  display:none;
 }
 .feedback-form__row input:focus,
 .feedback-form__row select:focus,
