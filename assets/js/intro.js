@@ -14,8 +14,8 @@
     overlay.classList.add('is-playing');
   });
 
-  // Hide after animation ends (5.6s of animation + 0.5s fade = 6.1s total)
-  const TOTAL_DURATION = 5600;
+  // Hide after animation ends (4.6s of animation + 0.5s fade = 5.1s total)
+  const TOTAL_DURATION = 4600;
   const FADE_DURATION = 500;
 
   setTimeout(() => {
