@@ -8,20 +8,6 @@
   const overlay = document.getElementById('introOverlay');
   if (!overlay) return;
 
-  // Skip intro if user has visited recently (last 6 hours) — nicer UX
-  let skipIntro = false;
-  try {
-    const last = sessionStorage.getItem('hf_intro_seen');
-    if (last && (Date.now() - parseInt(last, 10)) < 6 * 60 * 60 * 1000) {
-      skipIntro = true;
-    }
-  } catch (_) { /* sessionStorage may be blocked */ }
-
-  if (skipIntro) {
-    overlay.style.display = 'none';
-    document.body.classList.remove('loading');
-    return;
-  }
 
   // Trigger animation start
   requestAnimationFrame(() => {
@@ -35,7 +21,6 @@
   setTimeout(() => {
     overlay.classList.add('is-hidden');
     document.body.classList.remove('loading');
-    try { sessionStorage.setItem('hf_intro_seen', String(Date.now())); } catch (_) {}
   }, TOTAL_DURATION);
 
   setTimeout(() => {
@@ -47,6 +32,5 @@
     overlay.classList.add('is-hidden');
     document.body.classList.remove('loading');
     setTimeout(() => { overlay.style.display = 'none'; }, FADE_DURATION);
-    try { sessionStorage.setItem('hf_intro_seen', String(Date.now())); } catch (_) {}
   });
 })();
