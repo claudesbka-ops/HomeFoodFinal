@@ -1524,14 +1524,15 @@ em{ font-style: italic; color: var(--primary); }
   stroke-width: 2.5 !important;
   opacity: 1 !important;
 }
-.footer__socials a:hover svg{
+.footer__socials a:hover svg,
+.footer__socials a:hover i{
   stroke: #fff !important;
   color: #fff !important;
 }
 .footer__socials a:hover{
   background: var(--primary);
   border-color: var(--primary);
-  color: #fff;
+  color: #fff !important;
   transform: translateY(-3px);
 }
 .footer h5{ font-family: var(--sans); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing:.1em; color: rgba(255,255,255,.5); margin-bottom: 16px; }
