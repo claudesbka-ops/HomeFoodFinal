@@ -203,21 +203,6 @@ button{ font: inherit; cursor:pointer; border:0; background:none; color:inherit;
   box-shadow: var(--shadow-lg);
   background: #111;
 }
-.intro__video-logo{
-  position: absolute;
-  left: 50%;
-  bottom: 14px;
-  transform: translateX(-50%);
-  background: rgba(251,246,238,.92);
-  padding: 10px 14px;
-  border-radius: 999px;
-  box-shadow: 0 10px 24px rgba(0,0,0,.12);
-}
-.intro__video-logo img{
-  display: block;
-  width: 90px;
-  height: auto;
-}
 .intro.is-playing .intro__video-wrap{
   animation: introVideoEnter 0.8s cubic-bezier(.34,1.56,.64,1) 0.05s forwards;
 }
