@@ -380,6 +380,65 @@ em{ font-style: italic; color: var(--primary); }
 .btn--lg{ padding: 16px 28px; font-size: 15px; }
 .btn--block{ width:100%; justify-content:center; }
 
+.feedback__grid{
+  display:grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: start;
+}
+.feedback__copy{
+  padding: 2rem 2.5rem;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.feedback__copy p{
+  margin: 0 0 24px;
+  color: var(--ink-soft);
+}
+.feedback-form{
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+.feedback-form__row{
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.feedback-form__row label{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.feedback-form__row input,
+.feedback-form__row select,
+.feedback-form__row textarea{
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: #fff;
+  color: var(--ink-2);
+  font-family: var(--sans);
+  font-size: 15px;
+}
+.feedback-form__row input:focus,
+.feedback-form__row select:focus,
+.feedback-form__row textarea:focus{
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(230,57,70,.08);
+}
+.feedback-form__row textarea{
+  min-height: 160px;
+  resize: vertical;
+}
+@media (max-width: 980px){
+  .feedback__grid{ grid-template-columns: 1fr; }
+}
+
 /* App store buttons */
 .store-btn{
   display:inline-flex; align-items:center; gap:12px;

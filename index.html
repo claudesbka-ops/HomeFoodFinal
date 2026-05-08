@@ -950,6 +950,55 @@
         </div>
       </div>
     </section>
+
+    <!-- ========== Reviews & Suggestions ========== -->
+    <section class="section section--soft" id="feedback">
+      <div class="container feedback">
+        <header class="section__head section__head--row">
+          <div>
+            <span class="eyebrow"><span class="dot"></span> Reviews & Suggestions</span>
+            <h2 class="section__title">Share your experience <em>with HomeFood.</em></h2>
+            <p class="section__sub">Whether you are a customer, home cook, or rider, your feedback helps us improve the HomeFood experience for everyone.</p>
+          </div>
+        </header>
+
+        <div class="feedback__grid">
+          <div class="feedback__copy">
+            <p>Use the form to tell us what you love, what we should fix, or ideas for a better experience.</p>
+            <ul class="ticks">
+              <li><i data-lucide="check-circle-2"></i> Customers can share order or taste feedback</li>
+              <li><i data-lucide="check-circle-2"></i> Cooks can suggest app or kitchen improvements</li>
+              <li><i data-lucide="check-circle-2"></i> Riders can report delivery or route insights</li>
+            </ul>
+          </div>
+
+          <form class="feedback-form" action="#" method="post">
+            <div class="feedback-form__row">
+              <label for="feedback-role">I am a</label>
+              <select id="feedback-role" name="role" required>
+                <option value="">Select your role</option>
+                <option value="customer">Customer</option>
+                <option value="home-cook">Home cook</option>
+                <option value="rider">Rider</option>
+              </select>
+            </div>
+            <div class="feedback-form__row">
+              <label for="feedback-name">Full name</label>
+              <input id="feedback-name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="feedback-form__row">
+              <label for="feedback-email">Email</label>
+              <input id="feedback-email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="feedback-form__row">
+              <label for="feedback-message">Review / suggestion</label>
+              <textarea id="feedback-message" name="message" rows="6" placeholder="Tell us what you think..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">Submit feedback <i data-lucide="send"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ========== Footer ========== -->
