@@ -1661,9 +1661,9 @@ em{ font-style: italic; color: var(--primary); }
 .footer__brand .nav__logo{ background: var(--primary); }
 .footer__socials{ display:flex; gap: 12px; margin-top: 22px; }
 .footer__socials a{
-  width: 42px; height: 42px; border-radius: 50%;
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.18);
+  width: 48px; height: 48px; border-radius: 50%;
+  background: radial-gradient(circle at top left, rgba(217,164,65,.24), transparent 45%), rgba(255,255,255,.12);
+  border: 1px solid rgba(217,164,65,.32);
   color: #fff;
   display:inline-flex; align-items:center; justify-content:center;
   transition: background .2s ease, color .2s ease, transform .25s ease, border-color .2s ease;
@@ -1672,7 +1672,7 @@ em{ font-style: italic; color: var(--primary); }
 .footer__socials a i{
   width: 22px !important;
   height: 22px !important;
-  color: #fff !important;
+  color: currentColor !important;
   stroke: currentColor !important;
   fill: currentColor !important;
   stroke-width: 2.5 !important;
@@ -1681,13 +1681,13 @@ em{ font-style: italic; color: var(--primary); }
 .footer__socials a:hover svg,
 .footer__socials a:hover i{
   stroke: currentColor !important;
-  color: #fff !important;
+  color: currentColor !important;
   fill: currentColor !important;
 }
 .footer__socials a:hover{
-  background: var(--primary);
-  border-color: var(--primary);
-  color: #fff !important;
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink) !important;
   transform: translateY(-3px);
 }
 .footer__socials a svg path,
