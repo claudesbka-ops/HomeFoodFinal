@@ -192,21 +192,23 @@
       card.addEventListener('mouseleave', onLeave);
     });
 
-    /* Hero phone subtly follows cursor */
-    const heroArt = document.querySelector('.hero__art');
-    const heroPhone = document.querySelector('.hero__art .phone');
-    if (heroArt && heroPhone) {
-      heroArt.style.perspective = '1200px';
-      heroArt.addEventListener('mousemove', (e) => {
-        const r = heroArt.getBoundingClientRect();
-        const x = (e.clientX - r.left) / r.width - .5;
-        const y = (e.clientY - r.top) / r.height - .5;
-        heroPhone.style.transform = `rotateX(${(-y * 8).toFixed(2)}deg) rotateY(${(x * 12).toFixed(2)}deg)`;
-      });
-      heroArt.addEventListener('mouseleave', () => {
-        heroPhone.style.transform = '';
-      });
-    }
+    /* Hero phone subtly follows cursor - apply to all hero art elements (both slides) */
+    document.querySelectorAll('.hero__slide').forEach(slide => {
+      const heroArt = slide.querySelector('.hero__art');
+      const heroPhone = slide.querySelector('.phone');
+      if (heroArt && heroPhone) {
+        heroArt.style.perspective = '1200px';
+        heroArt.addEventListener('mousemove', (e) => {
+          const r = heroArt.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width - .5;
+          const y = (e.clientY - r.top) / r.height - .5;
+          heroPhone.style.transform = `rotateX(${(-y * 8).toFixed(2)}deg) rotateY(${(x * 12).toFixed(2)}deg)`;
+        });
+        heroArt.addEventListener('mouseleave', () => {
+          heroPhone.style.transform = '';
+        });
+      }
+    });
   }
 
   /* ---------- Hero slider (manual-only horizontal carousel) ---------- */
