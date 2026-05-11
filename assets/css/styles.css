@@ -1101,7 +1101,7 @@ em{ font-style: italic; color: var(--primary); }
   position: sticky; top: 0;
   height: 100vh; min-height: 640px;
   display:flex; align-items:center; justify-content:center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .stage{
@@ -1163,12 +1163,12 @@ em{ font-style: italic; color: var(--primary); }
   box-shadow: var(--shadow-md);
   backdrop-filter: blur(10px);
   white-space: nowrap;
-  z-index: 10;
+  z-index: 100;
 }
 .stage__chip i{ width:14px; height:14px; color: var(--gold); flex-shrink: 0; }
-.stage__chip--a{ left: 12%; top: 12%; }
-.stage__chip--b{ right: 12%; top: 15%; }
-.stage__chip--c{ left: 15%; bottom: 12%; }
+.stage__chip--a{ left: 18%; top: 5%; }
+.stage__chip--b{ right: 18%; top: 8%; }
+.stage__chip--c{ left: 20%; bottom: 8%; }
 
 @media (max-width: 900px){
   .showcase{ height: auto; }
