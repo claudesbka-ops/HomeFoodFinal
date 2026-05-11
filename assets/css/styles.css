@@ -1166,9 +1166,9 @@ em{ font-style: italic; color: var(--primary); }
   z-index: 100;
 }
 .stage__chip i{ width:14px; height:14px; color: var(--gold); flex-shrink: 0; }
-.stage__chip--a{ left: 18%; top: 5%; }
-.stage__chip--b{ right: 18%; top: 8%; }
-.stage__chip--c{ left: 20%; bottom: 8%; }
+.stage__chip--a{ left: 5%; top: 0%; }
+.stage__chip--b{ right: 5%; top: 2%; }
+.stage__chip--c{ left: 8%; bottom: 5%; }
 
 @media (max-width: 900px){
   .showcase{ height: auto; }
