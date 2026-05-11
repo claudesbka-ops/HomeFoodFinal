@@ -935,10 +935,10 @@ em{ font-style: italic; color: var(--primary); }
 }
 
 /* Phone mock */
-.hero__art{ position: relative; height: 640px; }
+.hero__art{ position: relative; height: 600px; }
 .phone{
   position: relative;
-  width: 320px; height: 640px;
+  width: 320px; height: 580px;
   background: var(--ink);
   border-radius: 44px;
   padding: 14px;
