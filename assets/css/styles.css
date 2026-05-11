@@ -631,7 +631,10 @@ em{ font-style: italic; color: var(--primary); }
 }
 .nav__brand--footer .nav__logoimg{
   height: 64px;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0,0,0,.2));
+}
+.footer__brand .nav__brand--footer .nav__logoimg{
+  filter: brightness(0) invert(1) !important;
 }
 .nav.is-stuck .nav__logoimg{ height: 48px; transition: height .25s ease; }
 .nav__links{ display:flex; gap: 4px; }
@@ -1679,6 +1682,9 @@ em{ font-style: italic; color: var(--primary); }
   stroke-width: 2.5 !important;
   opacity: 1 !important;
 }
+.footer__socials a img{
+  filter: brightness(0) invert(1) !important;
+}
 .footer__socials a:hover svg,
 .footer__socials a:hover i,
 .footer__socials a:hover img{
@@ -1691,6 +1697,9 @@ em{ font-style: italic; color: var(--primary); }
   border-color: var(--gold);
   color: var(--ink) !important;
   transform: translateY(-3px);
+}
+.footer__socials a:hover img{
+  filter: brightness(1) invert(0) !important;
 }
 .footer__socials a svg path,
 .footer__socials a svg circle,
